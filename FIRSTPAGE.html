@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', Times, serif;
+            padding-top: 250px;
+        }
+
+        .row {
+            width: 100px;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 25px;
+        }
+
+        .row1 {
+            width: 500px;
+            background: indigo;
+            padding: 20px;
+            height: 50px;
+            border-radius: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            right: 300px;
+            box-sizing: border-box;
+            top: -20px;
+
+        }
+
+        .row2 {
+            width: 500px;
+            background: yellow;
+            padding: 20px;
+            height: 50px;
+            border-radius: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            right: 300px;
+            box-sizing: border-box;
+            top: -80px;
+
+        }
+
+        .row3 {
+            width: 500px;
+            background: orange;
+            padding: 20px;
+            height: 50px;
+            border-radius: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            left: 300px;
+            box-sizing: border-box;
+            top: -110px;
+
+        }
+
+        .row4 {
+            width: 500px;
+            background: green;
+            padding: 20px;
+            height: 50px;
+            border-radius: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            left: 300px;
+            box-sizing: border-box;
+            top: -165px;
+
+        }
+
+        .row5 {
+            width: 40%;
+            margin: 20px auto;
+            background: violet;
+            padding: 20px;
+            height: 30px;
+            border-radius: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: -140px;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding: 20px 40px;
+            color: rgb(41, 10, 10);
+            box-shadow: yellow;
+            z-index: 10;
+            backdrop-filter: blur(5px);
+        }
+
+        header img.logo {
+            width: 150px;
+            height: 150px;
+            border-radius: 55%;
+        }
+
+
+
+        header h1 .centered-title {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            margin: 0;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 40px 20px;
+            color: red;
+            max-width: 900px;
+            margin: 40px auto;
+            background: midnightblue;
+            border-radius: 12px;
+            padding: 40px 20px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: var(#91e97b);
+            transition: 0.4s;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+
+            font-size: xx-large;
+            font-weight: bold;
+        }
+
+        section a {
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+            color: rgb(25, 25, 26);
+            transition: 0.3s;
+            z-index: 2;
+            position: relative;
+        }
+
+        section:hover {
+            box-shadow: 0 0 20px, 0 0 40px palevioletred,
+                0 0 60px rgb(108, 108, 248) inset;
+            background: linear-gradient(violet, yellowgreen);
+        }
+
+        section:hover a {
+            color: rgba(188, 117, 255, 0.788);
+            text-shadow: 0 0 5px black, 0 0 10px honeydew, 0 0 15px red;
+        }
+
+        footer {
+            text-align: center;
+            color: firebrick;
+            padding: 20px 0;
+            background: #91e97b;
+            font-weight: bold;
+            margin-top: -88px;
+        }
+
+        section {
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+
+<body>
+
+    <img src="stitch.jpg" alt="background-image" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    z-index: -1; object-fit: cover;">
+
+    <header>
+        <img src="COMPUTER.png" class="logo">
+        <h1 class="centered-title">MY HOMEPAGE</h1>
+    </header>
+
+
+
+    <div>
+
+        <section class="row1" onclick="window.location.href='personalref.html'">
+            1. PERSONAL REFLECTION
+        </section>
+    </div>
+    <div>
+        <section class="row3" onclick="window.location.href='communityser.html'">
+            2. COMMUNITY SERVICE OR ADVOCACY
+        </section>
+    </div>
+    <div>
+        <section class="row2" onclick="window.location.href='indpirationalpor.html'">
+            3. INSPIRATIONAL PORTFOLIO
+        </section>
+    </div>
+    <div>
+        <section class="row4" onclick="window.location.href='educ.html'">
+            4. EDUCATIONAL & INFORMATIONAL
+        </section>
+
+    </div>
+    <div>
+        <section class="row5" onclick="window.location.href='faithandtech.html'">
+            5. FAITH & TECHNOLOGY INTERGRATION
+        </section>
+    </div>
+
+
+
+    <footer>
+        &copy; <u><mark>BY LESSLEI DUMAOG RIVERA SEC-33 BSCS-1</mark> </u>
+    </footer>
+
+
+
+
+
+</body>
+
+</html>
